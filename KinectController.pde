@@ -10,7 +10,7 @@ class KinectController extends PApplet {
   float avgX, avgY;
 
   void settings() {
-    size(kinect2.depthWidth, kinect2.depthHeight);
+    size(kinect2.depthWidth, kinect2.depthHeight, P3D);
 
     kinect2.initDepth();
     kinect2.initDevice();
