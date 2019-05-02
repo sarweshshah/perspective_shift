@@ -23,8 +23,8 @@ void draw() {
   noFill();
 
   directionalLight(126, 126, 126, 0, 0, -1);
-  translate(mappedX, mappedY, 0);
+  translate(abs(width - mappedX), abs(height - mappedY), 0);
 
-  box(100);
+  box(160);
   perspective();
 }
