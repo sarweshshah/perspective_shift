@@ -5,7 +5,7 @@ Kinect2 kinect2 = new Kinect2(this);
 
 class KinectController extends PApplet {
   float kinMinThresh = 900;
-  float kinMaxThresh = 970;
+  float kinMaxThresh = 1100;
   PImage img;
   float avgX, avgY;
 

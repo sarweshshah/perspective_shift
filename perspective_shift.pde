@@ -21,10 +21,16 @@ void draw() {
   stroke(255);
   strokeWeight(5);
   noFill();
-
-  directionalLight(126, 126, 126, 0, 0, -1);
+  
+  pushMatrix();
   translate(abs(width - mappedX), abs(height - mappedY), 0);
-
   box(160);
+  popMatrix();
+  
+  pushMatrix();
+  translate(abs(width - mappedX + 140), abs(height - mappedY + 130), 0);
+  box(100, 44, 520);
+  popMatrix();
+  
   perspective();
 }
